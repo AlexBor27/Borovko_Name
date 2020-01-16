@@ -3,31 +3,31 @@ package name;
 import java.util.Scanner;
 
 /***************************************************************
- * Составить алгоритм: если введенное имя совпажает с Вячеслав,*
- * то вывести "Привет, Вячеслав", если нет, то вывести "Нет    *
- * такого имени"											   *
+ * РЎРѕСЃС‚Р°РІРёС‚СЊ Р°Р»РіРѕСЂРёС‚Рј: РµСЃР»Рё РІРІРµРґРµРЅРЅРѕРµ РёРјСЏ СЃРѕРІРїР°Р¶Р°РµС‚ СЃ Р’СЏС‡РµСЃР»Р°РІ,*
+ * С‚Рѕ РІС‹РІРµСЃС‚Рё "РџСЂРёРІРµС‚, Р’СЏС‡РµСЃР»Р°РІ", РµСЃР»Рё РЅРµС‚, С‚Рѕ РІС‹РІРµСЃС‚Рё "РќРµС‚    *
+ * С‚Р°РєРѕРіРѕ РёРјРµРЅРё"					       *
  **************************************************************/
 
 public class Name {
 
-	private static String name = "Вячеслав";
+	private static String name = "Р’СЏС‡РµСЃР»Р°РІ";
 
 	public static void func(String s) {
 
 		if (s.length() != 0) {
 			if (name.equals(s)) {
-				System.out.print("Привет, Вячеслав");
+				System.out.print("РџСЂРёРІРµС‚, Р’СЏС‡РµСЃР»Р°РІ");
 			} else {
-				System.out.print("Нет такого имени");
+				System.out.print("РќРµС‚ С‚Р°РєРѕРіРѕ РёРјРµРЅРё");
 			}
 		} else {
-			System.out.println("Вы не ввели данных");
+			System.out.println("Р’С‹ РЅРµ РІРІРµР»Рё РґР°РЅРЅС‹С…");
 		}
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Введите имя и нажмите 'Enter' ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ Рё РЅР°Р¶РјРёС‚Рµ 'Enter' ");
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		func(str);
